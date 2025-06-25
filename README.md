@@ -1,46 +1,10 @@
-Student Management System - Java Swing GUI
-Overview
-This is a simple Student Management System implemented in Java using the Swing framework. It provides a graphical user interface (GUI) where users can:
+🎓 Student Management System (Java Swing)
+A simple GUI-based Student Management System built using Java Swing. The application allows users to input student details and display the results in a formatted area. It is designed for educational purposes and to demonstrate basic GUI development with Java.
 
-Enter student details (Name, Roll Number, Degree)
+🧰 Features
+User-friendly interface built with Java Swing
 
-Enter marks for 4 subjects
-
-Calculate total marks, percentage, and grade
-
-View the result in a formatted text area
-
-Features
-User-friendly GUI for data entry and result display
-
-Input validation for marks (ensures values between 0 and 100)
-
-Automatic calculation of total, percentage, and grade
-
-Scrollable result area for displaying output
-
-Requirements
-Java Development Kit (JDK) 8 or higher
-
-How to Run
-Compile the code:
-
-Open a terminal/command prompt and navigate to the directory containing the .java file. Run:
-
-bash
-Copy
-Edit
-javac StudentManagementGUI.java
-Run the application:
-
-bash
-Copy
-Edit
-java StudentManagementGUI
-GUI Layout
-The GUI consists of:
-
-Text fields for:
+Input fields for:
 
 Student Name
 
@@ -48,25 +12,63 @@ Roll Number
 
 Degree
 
-Marks for 4 subjects
+Marks (4 subjects)
 
-A button: "Calculate Result"
+Displays student details and marks
 
-A scrollable text area to display the result summary
+Can be extended with GPA calculation, validations, and data persistence
 
-Grading Criteria
-Percentage Range	Grade
-90 - 100	A+
-75 - 89	A
-60 - 74	B
-50 - 59	C
-40 - 49	D
-Below 40	F
+🖼️ GUI Preview
+Insert a screenshot here once you have it
 
-Notes
-All mark inputs must be valid integers between 0 and 100.
+🚀 Getting Started
+Prerequisites
+JDK 8 or later
 
-If invalid input is detected, an error message is shown in the result area.
+A Java IDE like IntelliJ IDEA, Eclipse, or simply use a text editor and command line
 
-License
-This project is provided for educational purposes and is free to use and modify.
+Running the Project
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/student-management-system.git
+Navigate to the project folder:
+
+bash
+Copy
+Edit
+cd student-management-system
+Compile and run the program:
+
+bash
+Copy
+Edit
+javac StudentManagementGUI.java
+java StudentManagementGUI
+🧾 Code Overview
+The project consists of two main classes:
+
+StudentManagementGUI.java
+This is the entry point of the application. It uses SwingUtilities.invokeLater() to ensure that the GUI is created on the Event Dispatch Thread (EDT).
+
+StudentForm.java
+This class handles all GUI components:
+
+Uses JFrame, JLabel, JTextField, and JTextArea for layout
+
+GridLayout organizes components in a structured 9x2 grid
+
+Designed to be easily extendable for additional functionality (like buttons, validations, and storage)
+
+🔧 Possible Enhancements
+Add a Submit button to process and display results
+
+Validate input fields
+
+Compute and display average marks and grade
+
+Store data using file I/O or a database
+
+Add student search functionality
